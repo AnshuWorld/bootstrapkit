@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tin.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        #header {
+            color: #fff;
+            background-color: rgb(84, 128, 18);
+            position: sticky;
+            top: 0;
+            z-index: 101;
+        }
+
+        #logo {
+            font-size: 2rem;
+
+        }
+
+        #menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li:first-child{
+            background-color: green;
+        }
+
+        #menu li a {
+            color: #fff;
+            padding: 15px 10px;
+            display: block;
+            font-weight: 900;
+        }
+
+        #menu li a:hover {
+            background-color: green;
+            text-decoration: none;
+        }
+
+        #banner {
+            background: url('p6.webp') no-repeat 0 0;
+            animation-name: test1;
+            animation-duration: 27s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            background-size: cover;
+            color: honeydew;
+            padding: 50px;
+        }
+
+        @keyframes test1 {
+            0% {
+                background: url('lib1.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            10% {
+                background: url('lib2.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            20% {
+                background: url('lib3.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            30% {
+                background: url('lib4.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            50% {
+                background: url('lib5.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            70% {
+                background: url('lib6.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            90% {
+                background: url('lib1.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            100% {
+                background: url('lib7.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+        }
+
+        .about{
+            background-color: rgba(166, 151, 182, 0.7);
+            
+        }
+
+        .aboutpage{
+            background: url('p6.webp') no-repeat 0 0;
+        }
+        .banner-title {
+            padding-top: 5rem;
+        }
+
+        .banner-title h1 {
+            background-color: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            color: green;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .banner-title p.lead {
+            color: #fff;
+            background-color: rgba(179, 32, 15, 0.7);
+            padding: 10px;
+            margin: 0;
+        }
+
+        .service-box {
+            text-align: center;
+            box-shadow: ;
+            margin: 10px;
+        }
+
+        .service-box img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .service-box:img{
+            transition: 5s;
+            scale: (1.4,1.4);
+        }
+
+        
+
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+
+        .section-head {
+            text-align: center;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .section-head:after {
+            background-color: green;
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            margin: 20px auto;
+        }
+
+        #testinomials {
+            background: linear-gradient(red, green, blue) no-repeat 0 0;
+            
+            animation-delay: 0s;
+            transition: all;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+            background-size: cover;
+            padding: 50px 0;
+            position: relative;
+            color: white;
+        }
+
+        @keyframes test {
+            0% {
+                background: linear-gradient(red, green, blue);
+            }
+
+            30% {
+                background: linear-gradient(green, blue, red);
+            }
+
+            60% {
+                background: linear-gradient(blue, red, green);
+            }
+
+            90% {
+                background: linear-gradient(rgb(90, 90, 182), rgb(150, 77, 77), rgb(55, 133, 55));
+            }
+        }
+
+        #testinomials:before {
+            background: rgba(73, 52, 94, 0.7);
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        
+
+        .testinomial:after {
+            right: 0;
+            top: 0;
+            content: "";
+            width: 1%;
+            height: 100%;
+            position: absolute;
+            background-color: tomato;
+        }
+
+
+        #footer-sidebar {
+            color: #fff;
+            background:  linear-gradient(#000a11,#060c11,#0c1013);
+            padding: 20px 0;
+
+        }
+
+        .footer-widget h4:after {
+            content: "";
+            background: #f0f;
+            display: block;
+            width: 50px;
+            height: 7px;
+            margin: 5px 0;
+        }
+
+
+
+        .latest-news {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .latest-news li {
+            margin-bottom: 3px;
+        }
+
+        #a, #b{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+
+
+
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">
+                        Bookish World
+                    </h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallary.html">Gallary</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-lg-6 ">
+                    <div class="banner-title">
+                        <h1>Bookish World </h1>
+                        <p class="lead">We've always said that libraries have a unique role as safe public spaces that people trust.The latest proof of this is pretty spectacular!New research by IpsosMori rates all the professions</p>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid section about">
+        <div class="row">
+            <div class="col-md-12" >
+                <h2 class="section-head">
+                    About Us
+                </h2>
+            </div>
+            <div class="col-md-12 aboutpage">
+                
+            </div>
+            <div class="col-md-12" >
+                <p class="lead">
+                    We’ve always said that libraries have a unique role as safe public spaces that people trust.
+The latest proof of this is pretty spectacular!
+New research by IpsosMori rates all the professions you can easily think of, on one crucial factor – do people trust them to tell the truth?
+And right at the top are – librarians. They are trusted by 93% of the population. (Well, nurses beat librarians by a single point, but we are happy to give way to them… together, these two even beat doctors in the trust stakes!)
+It’s worth noting that ALL the professions line up at the top, from teachers to professors. While it’s no surprise these days to see politicians at the bottom at 19%, with only advertising executives scoring lower.
+It’s a massive – and deserved – vote of confidence in our libraries.
+And in the professional librarians that make them what they are.
+To quote Isobel Hunter of Libraries Connected: “It’s the people who put the libraryness in the libraries.”
+It's #CharityTuesday - a great time to think about all the amazing things you could do to fundraise in 2022!
+
+From bike rides to bake offs and skydives to treasure hunts, the possibilities are endless.
+Sharing stories is a great way to help you and your family relax and unwind!
+
+These calming books could make you all feel more chilled out 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+
+
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">
+                    Our Best Services
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="1.jpg" width="100%">
+                    <h3>Circulation Services</h3>
+                    <p>Library materials are borrowed and returned at the circulation desk, which is located near the main entrance. Reserved books, audio visual material, periodicals, reference books and CDs / DVDs can be used with in library.</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="2.jpg" width="100%">
+                    <h3>Reference Services</h3>
+                    <p>Library provides reference and referral service to its users. Queries are answered using all possible sources. If the required information source is not available / accessible at IST Library, the users are referred to other libraries where the required information may be available.</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="3.png" width="100%">
+                    <h3>Recommend an Item</h3>
+                    <p>We welcome faculty, staff, students and other members to recommend any material, which can add value to our library collection. Purchase of recommended items is subject to approval and availability of funds. However, we try our best to honor all recommendations of our valued library members.</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="4.jpg" width="100%">
+                    <h3>Photocopying / Printing Service</h3>
+                    <p>Photocopying and printing facility is available with the library. Users can get the photocopy of required information from reference materials (like reference books, encyclopedias, dictionaries, journals and magazines etc.) on payment.</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="5.jpg" width="100%">
+                    <h3>Multimedia Section</h3>
+                    <p>Multimedia section is established in library with 10 latest computers equipped with multimedia and internet facilities. Equipments required for the use of different types of information media (like CDs, DVDs, Audios, Videos etc.) are available in this section so that users can have better access to the information resources in digital format.</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="7.jpg" width="100%">
+                    <h3>Audio / Visual Service</h3>
+                    <p>Library members can utilize audio visual resources available in library. To facilitate the users, necessary equipment has been provided for this purpose. Library staff also extends help to the members in using these resources.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+
+
+    <div id="testinomials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head">
+                        Testinomials
+                    </h2>
+                </div>
+                <div class="col-md-3">
+                    <div class="testinomial">
+                        <p>The Bookish Library is one of the best Library. Purpose - To reflect on the importance of information storage and retrieval in the library curriculum in the 1980s. Design/methodology/approach - The article provides a reflective viewpoint.</p>
+                        <img src="1.webp" alt="" width="50%">
+                        <div class="author">
+                            Bill Ramesd
+                        </div>
+                        <div class="author-company">
+                            Jivwerty
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="testinomial">
+                        <p>The Bookish Library is one of the best Library. Purpose - To reflect on the importance of information storage and retrieval in the library curriculum in the 1980s. Design/methodology/approach - The article provides a reflective viewpoint.</p>
+                        <img src="1.webp" alt="" width="50%">
+                        <div class="author">
+                            Bill Ramesd
+                        </div>
+                        <div class="author-company">
+                            Jivwerty
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="testinomial">
+                        <p>The Bookish Library is one of the best Library. Purpose - To reflect on the importance of information storage and retrieval in the library curriculum in the 1980s. Design/methodology/approach - The article provides a reflective viewpoint.</p>
+                        <img src="1.webp" alt="" width="50%">
+                        <div class="author">
+                            Bill Ramesd
+                        </div>
+                        <div class="author-company">
+                            Jivwerty
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="testinomial">
+                        <p>The Bookish Library is one of the best Library. Purpose - To reflect on the importance of information storage and retrieval in the library curriculum in the 1980s. Design/methodology/approach - The article provides a reflective viewpoint.</p>
+                        <img src="1.webp" alt="" width="50%">
+                        <div class="author">
+                            Bill Ramesd
+                        </div>
+                        <div class="author-company">
+                            Jivwerty
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+
+
+
+    
+    <div id="news" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">
+                    Recent News
+                </h2>
+            </div>
+            <div class="col-lg-3">
+                <div class="news-post">
+                    <img src="" alt="">
+                    <h3><a href="">Library Campaign Zoom meeting 14 April 2021 Update</a></h3>
+                    <div class="post-date">January 1,2022</div>
+                    <p>Our first Zoom meeting on 14 April was a success. People attended from all over the country. The feedback we've had chimes in with our own thoughts - people value</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="news-post">
+                    <img src="" alt="">
+                    <h3><a href="">Library Campaign Zoom meeting 14 April 2021: 19:30</a></h3>
+                    <div class="post-date">January 4,2022</div>
+                    <p>THE LIBRARY CAMPAIGN AND FRIENDS OF LIBRARIES - HOW CAN WE WORK TOGETHER? ZOOM MEETING WEDNESDAY 14 APRIL 2021 @ 19:30-21:00Libraries need </p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="news-post">
+                    <img src="" alt="">
+                    <h3><a href="">SWINDON: SPARKS FLY OVER THREAT TO LIBRARIES</a></h3>
+                    <div class="post-date">January 5,2022</div>
+                    <p>Just in time for the local elections on 6 May… a row has erupted over the fate of two libraries in Swindon.A local library campaigner has decided to make the…</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="news-post">
+                    <img src="" alt="">
+                    <h3><a href="">WATCH IT HERE! TLC’s LIBRARY PUBLICITY ZOOM</a></h3>
+                    <div class="post-date">January 23,2022</div>
+                    <p>It was a good session - plenty of that it means thst you will be taking them forward.We started with a presentation from Nick Poole, CEO of librarians'…?</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+
+
+
+
+
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>WRITE TO US</h4>
+                        <p>The Library Campaign
+                            27 Old Gloucester Street
+                            LONDON
+                            WC1N 3AX</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>CALL US</h4>
+                        <p>For general enquiries
+                            please call 0845 450 5946.
+                            
+                            Please note, calls will cost 2p per minute plus your telephone company’s Access Charge.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>EMAIL US</h4>
+                        <address>
+                            Alternatively, please contact us
+by emailing
+thelibrarycampaign@gmail.com
+                        </address>
+                        Ph: (468) 657-6879
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>PRESS CONTACT</h4>
+                        <address>
+                            For all press enquiries please click here for further information.
+                        </address>
+                        Ph: (468) 657-6879
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

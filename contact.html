@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tin.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        #header {
+            color: #fff;
+            background-color: rgb(84, 128, 18);
+            position: sticky;
+            top: 0;
+            z-index: 101;
+        }
+
+        #logo {
+            font-size: 2rem;
+
+        }
+
+        #menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+
+
+        #menu li a {
+            color: #fff;
+            padding: 15px 10px;
+            display: block;
+            font-weight: 900;
+        }
+
+        #menu li a:hover {
+            background-color: green;
+            text-decoration: none;
+        }
+
+        #banner {
+            background: url('p6.webp') no-repeat 0 0;
+            animation-name: test1;
+            animation-duration: 27s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            background-size: cover;
+            color: honeydew;
+            padding: 50px;
+        }
+
+        @keyframes test1 {
+            0% {
+                background: url('lib1.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            10% {
+                background: url('lib2.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            20% {
+                background: url('lib3.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            30% {
+                background: url('lib4.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            50% {
+                background: url('lib5.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            70% {
+                background: url('lib6.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            90% {
+                background: url('lib1.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+
+            100% {
+                background: url('lib7.jpg') no-repeat 0 0;
+                background-size: cover;
+                color: honeydew;
+                padding: 50px;
+            }
+        }
+
+        .about {
+            background-color: rgba(166, 151, 182, 0.7);
+
+        }
+
+        .aboutpage {
+            background: url('p6.webp') no-repeat 0 0;
+        }
+
+        .banner-title {
+            padding-top: 5rem;
+        }
+
+        .banner-title h1 {
+            background-color: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            color: green;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .banner-title p.lead {
+            color: #fff;
+            background-color: rgba(179, 32, 15, 0.7);
+            padding: 10px;
+            margin: 0;
+        }
+
+        .service-box {
+            text-align: center;
+            box-shadow: ;
+            margin: 10px;
+        }
+
+        .service-box:img {
+            transition: 5s;
+            scale: (1.4, 1.4);
+        }
+
+
+
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+
+        .section-head {
+            text-align: center;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .section-head:after {
+            background-color: green;
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            margin: 20px auto;
+        }
+
+        #testinomials {
+            background: linear-gradient(red, green, blue) no-repeat 0 0;
+
+            animation-delay: 0s;
+            transition: all;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+            background-size: cover;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        @keyframes test {
+            0% {
+                background: linear-gradient(red, green, blue);
+            }
+
+            30% {
+                background: linear-gradient(green, blue, red);
+            }
+
+            60% {
+                background: linear-gradient(blue, red, green);
+            }
+
+            90% {
+                background: linear-gradient(rgb(90, 90, 182), rgb(150, 77, 77), rgb(55, 133, 55));
+            }
+        }
+
+        #testinomials:before {
+            background: rgba(73, 52, 94, 0.7);
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+        .testinomial:after {
+            right: 0;
+            top: 0;
+            content: "";
+            width: 1%;
+            height: 100%;
+            position: absolute;
+            background-color: tomato;
+        }
+
+
+        #footer-sidebar {
+            color: #fff;
+            background: linear-gradient(#000a11, #060c11, #0c1013);
+            padding: 20px 0;
+
+        }
+
+        .footer-widget h4:after {
+            content: "";
+            background: #f0f;
+            display: block;
+            width: 50px;
+            height: 7px;
+            margin: 5px 0;
+        }
+
+
+
+        .latest-news {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .latest-news li {
+            margin-bottom: 3px;
+        }
+
+        #a,
+        #b {
+            float: left;
+        }
+
+        .image img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .a {
+            background-color: black;
+            color: white;
+            font-weight: 900;
+            width: 256px;
+            height: 40px;
+            margin-bottom: 50px;
+            padding-left: 50px;
+        }
+
+        .a:hover {
+            transition: 1s;
+            background-color: green;
+            padding-top: 10px;
+            padding-right: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .submit {
+            background-color: #3fb6b2;
+            padding: 12px 45px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ffffff;
+            border: none;
+            outline: none;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .submit:hover {
+            background-color: #43a09d;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            font-size: 11pt;
+            padding: 15px 10px 10px;
+            border: 1px solid #cecece;
+            background-color: #efefef;
+            color: #787575;
+            border-radius: 5px;
+            width: 70%;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+    <!--            MENU BAR                -->
+
+
+
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">
+                        Bookish World
+                    </h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallary.html">Gallary</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--            BANNER                 -->
+    <!--            BANNER                 -->
+    <!--            BANNER                 -->
+    <!--            BANNER                 -->
+    <!--            BANNER                 -->
+
+
+
+
+    <div id="banner">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-lg-6 ">
+                    <div class="banner-title">
+                        <h1>Bookish World </h1>
+                        <p class="lead">We've always said that libraries have a unique role as safe public spaces that
+                            people trust.The latest proof of this is pretty spectacular!New research by IpsosMori rates
+                            all the professions</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+    <!--            SERVICES                 -->
+
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Contact Us</h1>
+            <p>Here, our customer gives us feedback according to their loves with us.</p>
+        </div>
+        <div class="col-md-5">
+            <div class="row image">
+                <div class="section">
+
+                    <form>
+                        <input name="name" type="text" placeholder="Your Name" /><br />
+                        <input name="email" type="email" placeholder="Place your mail address" /><br />
+                        <textarea name="message"></textarea>
+                        <input type="submit" value="SEND" class="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div id="one">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.558993960147!2d86.13195522884433!3d22.806548811004454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4f942db25c5%3A0xe8f2e1fde7beeba!2sHatiyadih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1635736974272!5m2!1sen!2sin" width="950px" height="520px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+    <!--            TESTINOMIALS                 -->
+
+
+
+
+
+
+
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+    <!--            NEWS                 -->
+
+
+
+
+
+
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+    <!--            FOOTER                 -->
+
+
+
+
+
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>WRITE TO US</h4>
+                        <p>The Library Campaign
+                            27 Old Gloucester Street
+                            LONDON
+                            WC1N 3AX</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>CALL US</h4>
+                        <p>For general enquiries
+                            please call 0845 450 5946.
+
+                            Please note, calls will cost 2p per minute plus your telephone company’s Access Charge.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>EMAIL US</h4>
+                        <address>
+                            Alternatively, please contact us
+                            by emailing
+                            thelibrarycampaign@gmail.com
+                        </address>
+                        Ph: (468) 657-6879
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4>PRESS CONTACT</h4>
+                        <address>
+                            For all press enquiries please click here for further information.
+                        </address>
+                        Ph: (468) 657-6879
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
